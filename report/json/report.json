@@ -1,0 +1,234 @@
+{
+  "config": {
+    "configFile": "D:\\KERJA\\QA\\tes-api-reqres\\playwright.config.js",
+    "rootDir": "D:/KERJA/QA/tes-api-reqres/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "report/json/report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "report/html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/KERJA/QA/tes-api-reqres/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/KERJA/QA/tes-api-reqres/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.49.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api-test.spec.js",
+      "file": "api-test.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Test Case 1 - GET Single User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1207,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-15T06:45:16.381Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea20521d6fcf43dcdb4f-5631fbe4c18b0c178dfb",
+          "file": "api-test.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Test Case 2 - POST User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 1189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-15T06:45:16.419Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea20521d6fcf43dcdb4f-1f457edef861c08bfa7d",
+          "file": "api-test.spec.js",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "Test Case 3 - PUT User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1293,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-15T06:45:16.361Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ea20521d6fcf43dcdb4f-08067e9abc2650427de9",
+          "file": "api-test.spec.js",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "Test Case 4 - DELETE User",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 1507,
+                  "error": {
+                    "message": "SyntaxError: D:\\KERJA\\QA\\tes-api-reqres\\tests\\jsonschema\\delete-object-schema.json: Unexpected end of JSON input",
+                    "stack": "SyntaxError: D:\\KERJA\\QA\\tes-api-reqres\\tests\\jsonschema\\delete-object-schema.json: Unexpected end of JSON input\n    at D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js:91:32",
+                    "location": {
+                      "file": "D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js",
+                      "column": 32,
+                      "line": 91
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m204\u001b[39m)\n \u001b[90m 90 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m     \u001b[36mconst\u001b[39m valid \u001b[33m=\u001b[39m ajv\u001b[33m.\u001b[39mvalidate(require(\u001b[32m'./jsonschema/delete-object-schema.json'\u001b[39m)\u001b[33m,\u001b[39m responseData)\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m\n \u001b[90m 93 |\u001b[39m     \n \u001b[90m 94 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js",
+                        "column": 32,
+                        "line": 91
+                      },
+                      "message": "SyntaxError: D:\\KERJA\\QA\\tes-api-reqres\\tests\\jsonschema\\delete-object-schema.json: Unexpected end of JSON input\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m204\u001b[39m)\n \u001b[90m 90 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m     \u001b[36mconst\u001b[39m valid \u001b[33m=\u001b[39m ajv\u001b[33m.\u001b[39mvalidate(require(\u001b[32m'./jsonschema/delete-object-schema.json'\u001b[39m)\u001b[33m,\u001b[39m responseData)\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m\n \u001b[90m 93 |\u001b[39m     \n \u001b[90m 94 |\u001b[39m })\u001b[0m\n\u001b[2m    at D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js:91:32\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-15T06:45:16.393Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js",
+                    "column": 32,
+                    "line": 91
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea20521d6fcf43dcdb4f-7e726a68d1959ce4fb7f",
+          "file": "api-test.spec.js",
+          "line": 86,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-12-15T06:45:15.191Z",
+    "duration": 2765.0969999999998,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

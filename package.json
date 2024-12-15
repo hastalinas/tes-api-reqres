@@ -1,0 +1,17 @@
+{
+  "name": "tes-api-reqres",
+  "version": "1.0.0",
+  "description": "Test automation API Reqres using Playwright",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}
