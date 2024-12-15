@@ -82,12 +82,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1207,
+                  "duration": 1419,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-15T06:45:16.381Z",
+                  "startTime": "2024-12-15T07:02:46.263Z",
                   "attachments": []
                 }
               ],
@@ -114,12 +114,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 1189,
+                  "duration": 1496,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-15T06:45:16.419Z",
+                  "startTime": "2024-12-15T07:02:46.351Z",
                   "attachments": []
                 }
               ],
@@ -146,12 +146,12 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 1293,
+                  "duration": 1485,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-15T06:45:16.361Z",
+                  "startTime": "2024-12-15T07:02:46.293Z",
                   "attachments": []
                 }
               ],
@@ -165,7 +165,7 @@
         },
         {
           "title": "Test Case 4 - DELETE User",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -177,41 +177,17 @@
               "results": [
                 {
                   "workerIndex": 3,
-                  "status": "failed",
-                  "duration": 1507,
-                  "error": {
-                    "message": "SyntaxError: D:\\KERJA\\QA\\tes-api-reqres\\tests\\jsonschema\\delete-object-schema.json: Unexpected end of JSON input",
-                    "stack": "SyntaxError: D:\\KERJA\\QA\\tes-api-reqres\\tests\\jsonschema\\delete-object-schema.json: Unexpected end of JSON input\n    at D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js:91:32",
-                    "location": {
-                      "file": "D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js",
-                      "column": 32,
-                      "line": 91
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m204\u001b[39m)\n \u001b[90m 90 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m     \u001b[36mconst\u001b[39m valid \u001b[33m=\u001b[39m ajv\u001b[33m.\u001b[39mvalidate(require(\u001b[32m'./jsonschema/delete-object-schema.json'\u001b[39m)\u001b[33m,\u001b[39m responseData)\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m\n \u001b[90m 93 |\u001b[39m     \n \u001b[90m 94 |\u001b[39m })\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js",
-                        "column": 32,
-                        "line": 91
-                      },
-                      "message": "SyntaxError: D:\\KERJA\\QA\\tes-api-reqres\\tests\\jsonschema\\delete-object-schema.json: Unexpected end of JSON input\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m204\u001b[39m)\n \u001b[90m 90 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m     \u001b[36mconst\u001b[39m valid \u001b[33m=\u001b[39m ajv\u001b[33m.\u001b[39mvalidate(require(\u001b[32m'./jsonschema/delete-object-schema.json'\u001b[39m)\u001b[33m,\u001b[39m responseData)\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m\n \u001b[90m 93 |\u001b[39m     \n \u001b[90m 94 |\u001b[39m })\u001b[0m\n\u001b[2m    at D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js:91:32\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 1484,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-15T06:45:16.393Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "D:\\KERJA\\QA\\tes-api-reqres\\tests\\api-test.spec.js",
-                    "column": 32,
-                    "line": 91
-                  }
+                  "startTime": "2024-12-15T07:02:46.323Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "ea20521d6fcf43dcdb4f-7e726a68d1959ce4fb7f",
@@ -224,11 +200,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-12-15T06:45:15.191Z",
-    "duration": 2765.0969999999998,
-    "expected": 3,
+    "startTime": "2024-12-15T07:02:45.031Z",
+    "duration": 2844.508,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
